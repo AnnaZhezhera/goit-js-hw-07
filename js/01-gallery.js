@@ -61,4 +61,5 @@ function createImageCardMarkup(galleryItems) {
 
   gallery.append(...arrayOfDivs);
 }
-console.log(createImageCardMarkup(galleryItems));
+
+createImageCardMarkup(galleryItems);
