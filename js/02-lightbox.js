@@ -8,24 +8,7 @@ const gallery = document.querySelector(".gallery");
 gallery.addEventListener("click", selectedImageHandler);
 
 function selectedImageHandler(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-
   const originalImage = event.target.dataset.original;
-  //   const modalDiv = modal.element();
-  //   const img = modalDiv.querySelector("img");
-
-  //   img.setAttribute("src", originalImage);
-
-  //   modal.show();
-
-  gallery.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      modal.close();
-    }
-  });
 }
 
 function createImageCardMarkup(galleryItems) {
